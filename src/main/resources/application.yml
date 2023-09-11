@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    active: v2dev
+  application:
+    name: ASTARMIZE
+jwt:
+  token:
+    secret-key: ThisIsSecretForJWTHS512SignatureAlgorithmThatMUSTHave64ByteLength
+    expiration-minutes: 60 # 유효 시간을 분으로 설정
+springbootjjwt:
+  password:
+    encoder:
+      secret: mysecret
+      iteration: 33
+      keylength: 256
